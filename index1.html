@@ -8,13 +8,18 @@
 </head>
 
 <body>
-	<header>
+
+	<a href="#" onclick="start()" id="s0">start test</a>
+
+	<header id="hd">
 		<div id="symbol">symbol</div>
 		<div id="timer">time</div>
 		<div id="user-info">user</div>
 	</header>
+
 	<div id="contents">
-		<section>
+
+		<section id="s1">
 			1. Which of the following statement is/are correct about Favipiravir?
 			<form>
 				<input type="radio" name="one" onclick="marks(name,this.value)" value="1">Favipiravir is an antiviral
@@ -24,13 +29,144 @@
 				<input type="radio" name="one" onclick="marks(name,this.value)" value="3">It is India's first COVID-19
 				drug launched, priced at Rs 103 per tablet.<br>
 				<input type="radio" name="one" onclick="marks(name,this.value)" value="4">All the above are correct<br>
-				<!-- <button onclick="save()">save</button> -->
-				<span id="asd">kk</span>
+				<!-- <span id="asd">kk</span> --> 
 			</form>
-			<a href="index10.html">prev</a>
-			<a href="index2.html">next</a>
+			<a href="#" onclick="show('s10','s1')">prev</a>
+			<a href="#" onclick="show('s2','s1')">next</a>
 		</section>
-		<nav>
+
+
+		<section id="s2">
+			2. How many countries, areas or territories are suffering from novel coronavirus outbreak in the World?			<form>
+				<input type="radio" name="two" onclick="marks(name,this.value)" value="1">More than 50<br>
+				<input type="radio" name="two" onclick="marks(name,this.value)" value="2">More than 100<br>
+				<input type="radio" name="two" onclick="marks(name,this.value)" value="3">More than 150<br>
+				<input type="radio" name="two" onclick="marks(name,this.value)" value="4">More than 200<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s1','s2')">prev</a>
+			<a href="#" onclick="show('s3','s2')">next</a>
+		</section>
+
+
+		<section id="s3">
+			3.  Thailand announced that it has proceeded to test its novel coronavirus vaccine on which animal/bird?		<form>
+				<input type="radio" name="three" onclick="marks(name,this.value)" value="1">Monkeys<br>
+				<input type="radio" name="three" onclick="marks(name,this.value)" value="2"> Lizards<br>
+				<input type="radio" name="three" onclick="marks(name,this.value)" value="3">Hens<br>
+				<input type="radio" name="three" onclick="marks(name,this.value)" value="4">Kites<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s2','s3')">prev</a>
+			<a href="#" onclick="show('s4','s3')">next</a>
+		</section>
+
+
+		<section id="s4">
+			4. In a study, which cells are found in COVID-19 patients 'bode well' for long term immunity?		<form>
+				<input type="radio" name="four" onclick="marks(name,this.value)" value="1">P-cell<br>
+				<input type="radio" name="four" onclick="marks(name,this.value)" value="2">D-Cell<br>
+				<input type="radio" name="four" onclick="marks(name,this.value)" value="3">T-Cell<br>
+				<input type="radio" name="four" onclick="marks(name,this.value)" value="4">Endothelial Cells<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s3','s4')">prev</a>
+			<a href="#" onclick="show('s5','s4')">next</a>
+		</section>
+
+
+		<section id="s5">
+			5. Name the vaccine that is jointly developed by the German company BioNTech and US pharma giant Pfizer for COVID-19?		<form>
+				<input type="radio" name="five" onclick="marks(name,this.value)" value="1">BNT162<br>
+				<input type="radio" name="five" onclick="marks(name,this.value)" value="2">PICOVACC<br>
+				<input type="radio" name="five" onclick="marks(name,this.value)" value="3">Both A and B<br>
+				<input type="radio" name="five" onclick="marks(name,this.value)" value="4">Neither A nor B<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s4','s5')">prev</a>
+			<a href="#" onclick="show('s6','s5')">next</a>
+		</section>
+
+
+		<section id="s6">
+			6. Name a clinical trial in which blood is transfused from recovered COVID-19 patients to a coronavirus patient who is in critical condition?	<form>
+				<input type="radio" name="six" onclick="marks(name,this.value)" value="1">Plasma Therapy<br>
+				<input type="radio" name="six" onclick="marks(name,this.value)" value="2">Solidarity<br>
+				<input type="radio" name="six" onclick="marks(name,this.value)" value="3">Remdesivir<br>
+				<input type="radio" name="six" onclick="marks(name,this.value)" value="4">Hydroxychloroquine<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s5','s6')">prev</a>
+			<a href="#" onclick="show('s7','s6')">next</a>
+		</section>
+
+
+		<section id="s7">
+			7.  How does Coronavirus transmit?	<form>
+				<input type="radio" name="seven" onclick="marks(name,this.value)" value="1">When a person sneezes or cough, droplets spread in the air or fall on the ground and nearby surfaces.<br>
+				<input type="radio" name="seven" onclick="marks(name,this.value)" value="2">If another person is nearby and inhales the droplets or touches these surfaces and further touches his face, eyes or mouth, he or she can get an infection.<br>
+				<input type="radio" name="seven" onclick="marks(name,this.value)" value="3">If the distance is less than 1 meter from the infected person.<br>
+				<input type="radio" name="seven" onclick="marks(name,this.value)" value="4">All the above are correct.<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s6','s7')">prev</a>
+			<a href="#" onclick="show('s8','s7')">next</a>
+		</section>
+
+
+		<section id="s8">
+			8. What happens to a person suffering from COVID-19?		<form>
+				<input type="radio" name="eight" onclick="marks(name,this.value)" value="1">Around 80% of the people will require no treatment as such and will recover on their own.<br>
+				<input type="radio" name="eight" onclick="marks(name,this.value)" value="2">Around <20% or a small proportion may need hospitalisation.<br>
+				<input type="radio" name="eight" onclick="marks(name,this.value)" value="3">A very small proportion basically suffering from chronic illness may need admission in an Intensive Care Unit (ICU).<br>
+				<input type="radio" name="eight" onclick="marks(name,this.value)" value="4">All the above are correct<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s7','s8')">prev</a>
+			<a href="#" onclick="show('s9','s8')">next</a>
+		</section>
+
+
+		<section id="s9">
+			9. In which age group the COVID-19 spreads?		<form>
+				<input type="radio" name="nine" onclick="marks(name,this.value)" value="1">COVID-19 occur in all age groups.<br>
+				<input type="radio" name="nine" onclick="marks(name,this.value)" value="2">Coronavirus infection is mild in children.<br>
+				<input type="radio" name="nine" onclick="marks(name,this.value)" value="3">Older person and persons with pre-existing medical conditions are at high risk to develop serious illness.<br>
+				<input type="radio" name="nine" onclick="marks(name,this.value)" value="4">All the above are correct,<br>
+				<!--<button onclick="save()">save</button>-->
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s8','s9')">prev</a>
+			<a href="#" onclick="show('s10','s9')">next</a>
+		</section>
+
+        
+        <section id="s10">
+			10.  What is Coronavirus?		<form>
+				<input type="radio" name="ten" onclick="marks(name,this.value)" value="1">It is a large family of viruses.<br>
+				<input type="radio" name="ten" onclick="marks(name,this.value)" value="2">It belongs to the family of Nidovirus.<br>
+				<input type="radio" name="ten" onclick="marks(name,this.value)" value="3">Both A and B are correct<br>
+				<input type="radio" name="ten" onclick="marks(name,this.value)" value="4">Only A is correct.<br>
+				
+				<!-- <span id="asd">kk</span> -->
+			</form>
+			<a href="#" onclick="show('s9','s10')">prev</a>
+			<a href="#" onclick="show('s11','s10'); show('s11','nv')">next</a>
+		</section>
+
+		<button onclick="finalmarks(); show('qwer','s11')" class="button button1" id="s11">submit</button>
+		<div id="qwer"></div>
+
+        
+
+		<nav id="nv">
 			navbar
 		</nav>
 	</div>

@@ -1,9 +1,18 @@
+body {
+	background-color: rgba(0,0,0,0.5);
+}
 header ,#contents {
 	display: flex;
 }
 
 header {
-    height: 200%;
+	display: none;
+    height: 10%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(50,50,50);
+    /*box-shadow: 0px 2px 20px black;*/
 }
 
 #contents {
@@ -13,18 +22,83 @@ header {
 header > div {
 	padding: 20px;
 	width: 33%;
-	background-color: slateblue;
+	/*background: linear-gradient(to bottom left, #6c0ba1 0%, #b0091a 100%);*/
+	background-color: #f44336;
 	margin: 10px;
+	box-shadow: 0px 2px 20px gray;
 }
 
 section {
+	display: none;
+	height: 50%;
 	width: 70%;
-	background-color: gray;
-	margin: 10px;
+	/*background: linear-gradient(to bottom left, rgba(10,10,200,1), rgba(10,10,120,0.5));*/
+	background-color: #008CBA;
+	margin: 0px;
+	box-shadow: 0px 2px 20px black;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
+	display: none;
 	width: 30%;
 	background-color: lightgray;
-	margin: 10px;
+	margin: 0px;
+	box-shadow: 0px 2px 20px black;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+a {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+a {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#s11 {
+	display: none;
 }

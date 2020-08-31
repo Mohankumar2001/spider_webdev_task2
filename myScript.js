@@ -1,6 +1,12 @@
 //var marksarr =[0,0,0,0,0,0,0,0,0,0];
 result=0;
 
+function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+
 function start() {
 	var marksarr = {
 		"ten" : "0",
@@ -15,6 +21,12 @@ function start() {
 		"nine" : "0",
 	}
 	localStorage.setItem("scores",JSON.stringify(marksarr));
+
+	document.getElementById('hd').style.display='flex';
+	document.getElementById('s1').style.display='block';
+	document.getElementById('nv').style.display='block';
+    document.getElementById('s0').style.display='none';
+	// show('s1','s0');
 }
 
 function marks(name, value) {
@@ -46,7 +58,7 @@ function finalmarks() {
 		if (arr[key]==ansarr[key])
 			result +=1;
 	}
-	var x = document.getElementById("asd");
+	var x = document.getElementById("qwer");
 	// localStorage.setItem("scores",JSON.stringify(arr));
 	x.innerHTML = result;
 }
