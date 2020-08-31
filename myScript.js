@@ -32,11 +32,31 @@ function start() {
 function marks(name, value) {
 	//name = parseInt(name);
 	//value = parseInt(value);
+	var ansarr = {
+		"ten" : "3",
+		"one" : "4",
+		"two" : "4",
+		"three" : "1",
+		"four" : "3",
+		"five" : "1",
+		"six" : "1",
+		"seven" : "4",
+		"eight" : "4",
+		"nine" : "4",
+	}
 	var arr = JSON.parse(localStorage.getItem("scores"));
 	arr[name] = value;
-	var x = document.getElementById("asd");
+	var x = document.getElementById(name);
 	localStorage.setItem("scores",JSON.stringify(arr));
-	x.innerHTML = arr[name];
+	if (ansarr[name] == value) {
+	    x.innerHTML = "The answer is correct";
+	    document.getElementById('bd').style.background = "rgba(0,0,0,0.5)";
+    }
+    else {
+    	x.innerHTML = "The answer is wrong";
+    	document.getElementById('bd').style.background = "red";
+    	// alert("wrong answer");
+    }
 }
 
 function finalmarks() {
