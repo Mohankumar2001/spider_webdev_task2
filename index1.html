@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>mcq_test</title>
+	<link rel="stylesheet" type="text/css" href="myStyle.css">
+	<script type="text/javascript" src="myScript.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="symbol">symbol</div>
+		<div id="timer">time</div>
+		<div id="user-info">user</div>
+	</header>
+	<div id="contents">
+		<section>
+			1. Which of the following statement is/are correct about Favipiravir?
+			<form>
+				<input type="radio" name="one" onclick="marks(name,this.value)" value="1">Favipiravir is an antiviral
+				COVID-19 drug.<br>
+				<input type="radio" name="one" onclick="marks(name,this.value)" value="2">Glenmark Pharmaceuticals under
+				the brand name FabiFlu has launched an antiviral drug Favipiravir.<br>
+				<input type="radio" name="one" onclick="marks(name,this.value)" value="3">It is India's first COVID-19
+				drug launched, priced at Rs 103 per tablet.<br>
+				<input type="radio" name="one" onclick="marks(name,this.value)" value="4">All the above are correct<br>
+				<!-- <button onclick="save()">save</button> -->
+				<span id="asd">kk</span>
+			</form>
+			<a href="index10.html">prev</a>
+			<a href="index2.html">next</a>
+		</section>
+		<nav>
+			navbar
+		</nav>
+	</div>
+
+
+
+	<!-- <header.>
+		<div id="symbol">Symbol</div>
+		<div id="time">time</div>
+		<div id="userInfo">user</div>
+		</header>
+		<main>
+			<section>
+				<div class="container">
+					<form id="formContainer">
+
+						<div class="form-group">
+							<h2>1. Which of the following statement is/are correct about Favipiravir?</h2>
+							<div class="option">
+								<input type="radio" name="q1" value="one">one
+								<input type="radio" name="q1" value="two">two
+								<input type="radio" name="q1" value="three">three
+								<input type="radio" name="q1" value="four">four
+							</div>
+						</div>
+
+
+						<script type="text/template" id="questionTemplate">
+							{{#each this}}
+								<div class="form-group">
+									<h2> {{question}} </h2>
+									<div class="option">
+										{{#each question}}
+										<input type="radio" name="q{{@index}}" value="{{value}}">one
+										{{/each}}
+									</div>
+								</div>
+							{{/each}}
+						</script>
+
+
+
+
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer></footer>
+
+
+
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
+		<script src="qestionaries.js"></script>
+		<script>
+			console.log(questions);
+
+			// let formContainer = document.getElementById("formContainer");
+			let questionTemplate = document.getElementById("questionTemplate");
+
+			let formContainer = Handlebars.compile(questionTemplate);
+
+			formContainer(questions);
+
+
+
+
+		</script> -->
+
+</body>
+
+</html>
