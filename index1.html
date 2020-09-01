@@ -11,15 +11,15 @@
 
 	<div id="s0">
 		<input type="text" name="username" id="s-1" value="name">
-		<input type="submit" name="name">
+		<!-- <input type="submit" name="name"> -->
 		<a href="#" onclick="start()">start test</a>
 	</div>
 
 	
 
 	<header id="hd">
-		<div id="symbol">symbol</div>
-		<div id="timer" onclick="timer()"></div>
+		<div id="symbol" align="center"><img src="assets/logo.png" height="80" width="80" alt="abcdefg"></img></div>
+		<div id="timer"></div>
 		<div id="user-info">user</div>
 	</header>
 
@@ -37,8 +37,8 @@
 				<input type="radio" name="one" onclick="marks(name,this.value)" value="4">All the above are correct<br>
 				<span id="one"></span> 
 			</form>
-			<a href="#" onclick="show('s10','s1')">prev</a>
-			<a href="#" onclick="show('s2','s1')">next</a>
+			<a href="#" onclick="sshow('s10',9)">prev</a>
+			<a href="#" onclick="sshow('s2',1)">next</a>
 		</section>
 
 
@@ -51,8 +51,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="two"></span>
 			</form>
-			<a href="#" onclick="show('s1','s2')">prev</a>
-			<a href="#" onclick="show('s3','s2')">next</a>
+			<a href="#" onclick="sshow('s1',0)">prev</a>
+			<a href="#" onclick="sshow('s3',2)">next</a>
 		</section>
 
 
@@ -65,8 +65,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="three"></span>
 			</form>
-			<a href="#" onclick="show('s2','s3')">prev</a>
-			<a href="#" onclick="show('s4','s3')">next</a>
+			<a href="#" onclick="sshow('s2',1)">prev</a>
+			<a href="#" onclick="sshow('s4',3)">next</a>
 		</section>
 
 
@@ -79,8 +79,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="four"></span>
 			</form>
-			<a href="#" onclick="show('s3','s4')">prev</a>
-			<a href="#" onclick="show('s5','s4')">next</a>
+			<a href="#" onclick="sshow('s3',2)">prev</a>
+			<a href="#" onclick="sshow('s5',4)">next</a>
 		</section>
 
 
@@ -93,8 +93,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="five"></span>
 			</form>
-			<a href="#" onclick="show('s4','s5')">prev</a>
-			<a href="#" onclick="show('s6','s5')">next</a>
+			<a href="#" onclick="sshow('s4',3)">prev</a>
+			<a href="#" onclick="sshow('s6',5)">next</a>
 		</section>
 
 
@@ -107,8 +107,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="six"></span>
 			</form>
-			<a href="#" onclick="show('s5','s6')">prev</a>
-			<a href="#" onclick="show('s7','s6')">next</a>
+			<a href="#" onclick="sshow('s5',4)">prev</a>
+			<a href="#" onclick="sshow('s7',6)">next</a>
 		</section>
 
 
@@ -121,8 +121,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="seven"></span>
 			</form>
-			<a href="#" onclick="show('s6','s7')">prev</a>
-			<a href="#" onclick="show('s8','s7')">next</a>
+			<a href="#" onclick="sshow('s6',5)">prev</a>
+			<a href="#" onclick="sshow('s8',7)">next</a>
 		</section>
 
 
@@ -135,8 +135,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="eight"></span>
 			</form>
-			<a href="#" onclick="show('s7','s8')">prev</a>
-			<a href="#" onclick="show('s9','s8')">next</a>
+			<a href="#" onclick="sshow('s7',6)">prev</a>
+			<a href="#" onclick="sshow('s9',8)">next</a>
 		</section>
 
 
@@ -149,8 +149,8 @@
 				<!--<button onclick="save()">save</button>-->
 				<span id="nine"></span>
 			</form>
-			<a href="#" onclick="show('s8','s9')">prev</a>
-			<a href="#" onclick="show('s10','s9')">next</a>
+			<a href="#" onclick="sshow('s8',7)">prev</a>
+			<a href="#" onclick="sshow('s10',9)">next</a>
 		</section>
 
         
@@ -163,8 +163,8 @@
 				
 				<span id="ten"></span>
 			</form>
-			<a href="#" onclick="show('s9','s10')">prev</a>
-			<a href="#" onclick="show('s11','s10'); show('s11','nv')">next</a>
+			<a href="#" onclick="sshow('s9',8)">prev</a>
+			<a href="#" onclick="sshow('s11',0); rem('nv')">next</a>
 		</section>
 
 		<button onclick="finalmarks(); show('qwer','s11'); stoptime();" class="button button1" id="s11">submit</button>

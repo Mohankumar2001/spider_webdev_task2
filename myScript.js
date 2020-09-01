@@ -7,6 +7,10 @@ function show(shown, hidden) {
       return false;
     }
 
+function rem(hidden) {
+      document.getElementById(hidden).style.display='none';
+    }
+
 function sshow(show,hidden) {
     
 	var section = document.getElementsByTagName("section");
@@ -41,7 +45,9 @@ function start() {
 	document.getElementById('user-info').innerHTML = name;
 
 	document.getElementById('hd').style.display='flex';
-	document.getElementById('s1').style.display='block';
+	document.getElementById('nv').style.display='flex';
+	// document.getElementById('s1').style.display='block';
+	sshow('s1',0);
 	document.getElementById('nv').style.display='flex';
     document.getElementById('s0').style.display='none';
 	// show('s1','s0');
@@ -111,8 +117,9 @@ function finalmarks() {
 			result +=1;
 	}
 	var x = document.getElementById("qwer");
+	x.style.display = 'block';
 	// localStorage.setItem("scores",JSON.stringify(arr));
-	x.innerHTML = result;
+	x.innerHTML = "Your score is "+result;
 }
 
 var time = 0;
