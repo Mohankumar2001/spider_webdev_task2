@@ -122,7 +122,7 @@ function finalmarks() {
 	x.innerHTML = "Your score is "+result;
 }
 
-var time = 0;
+var time = 300;
 var interval;
 
 function timer() {
@@ -130,8 +130,17 @@ function timer() {
 }
 
 function timedisp() {
-	time+=1;
-	document.getElementById('timer').innerHTML = time;
+	if (time==0) {
+		rem('nv');
+		rem('contents');
+		show('qwer','s11');
+		stoptime();
+		finalmarks();
+	}
+	else {
+		time-=1;
+		document.getElementById('timer').innerHTML = time;
+    }
 }
 
 function stoptime() {
