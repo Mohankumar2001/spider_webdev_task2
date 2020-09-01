@@ -7,7 +7,22 @@ function show(shown, hidden) {
       return false;
     }
 
+function sshow(show,hidden) {
+    
+	var section = document.getElementsByTagName("section");
+	var nav = document.getElementsByClassName('navig')
+	var x = document.getElementById(show);
+	var y = nav[hidden];
+	for (var i = 0; i < section.length; i++) {
+		section[i].style.display = 'none';
+	}
+    x.style.display = 'block';
+    y.style.background = '#fa6e6e';
+     
+    }
+
 function start() {
+	timer();
 	var marksarr = {
 		"ten" : "0",
 		"one" : "0",
@@ -22,9 +37,12 @@ function start() {
 	}
 	localStorage.setItem("scores",JSON.stringify(marksarr));
 
+	var name = document.getElementById('s-1').value;
+	document.getElementById('user-info').innerHTML = name;
+
 	document.getElementById('hd').style.display='flex';
 	document.getElementById('s1').style.display='block';
-	document.getElementById('nv').style.display='block';
+	document.getElementById('nv').style.display='flex';
     document.getElementById('s0').style.display='none';
 	// show('s1','s0');
 }
@@ -57,6 +75,20 @@ function marks(name, value) {
     	document.getElementById('bd').style.background = "red";
     	// alert("wrong answer");
     }
+    var reqarr = {
+		"ten" : 9,
+		"one" : 0,
+		"two" : 1,
+		"three" : 2,
+		"four" : 3,
+		"five" : 4,
+		"six" : 5,
+		"seven" : 6,
+		"eight" : 7,
+		"nine" : 8,
+	}
+    var nav = document.getElementsByClassName('navig');
+    nav[reqarr[name]].style.background = 'green';
 }
 
 function finalmarks() {
@@ -81,4 +113,20 @@ function finalmarks() {
 	var x = document.getElementById("qwer");
 	// localStorage.setItem("scores",JSON.stringify(arr));
 	x.innerHTML = result;
+}
+
+var time = 0;
+var interval;
+
+function timer() {
+	interval = setInterval(timedisp,1000);
+}
+
+function timedisp() {
+	time+=1;
+	document.getElementById('timer').innerHTML = time;
+}
+
+function stoptime() {
+	clearInterval(interval);
 }

@@ -9,11 +9,17 @@
 
 <body id="bd">
 
-	<a href="#" onclick="start()" id="s0">start test</a>
+	<div id="s0">
+		<input type="text" name="username" id="s-1" value="name">
+		<input type="submit" name="name">
+		<a href="#" onclick="start()">start test</a>
+	</div>
+
+	
 
 	<header id="hd">
 		<div id="symbol">symbol</div>
-		<div id="timer">time</div>
+		<div id="timer" onclick="timer()"></div>
 		<div id="user-info">user</div>
 	</header>
 
@@ -161,13 +167,22 @@
 			<a href="#" onclick="show('s11','s10'); show('s11','nv')">next</a>
 		</section>
 
-		<button onclick="finalmarks(); show('qwer','s11')" class="button button1" id="s11">submit</button>
+		<button onclick="finalmarks(); show('qwer','s11'); stoptime();" class="button button1" id="s11">submit</button>
 		<div id="qwer"></div>
 
         
 
 		<nav id="nv">
-			navbar
+			<div onclick="sshow('s1',0)" class="navig">1</div>
+			<div onclick="sshow('s2',1)" class="navig">2</div>
+			<div onclick="sshow('s3',2)" class="navig">3</div>
+			<div onclick="sshow('s4',3)" class="navig">4</div>
+			<div onclick="sshow('s5',4)" class="navig">5</div>
+			<div onclick="sshow('s6',5)" class="navig">6</div>
+			<div onclick="sshow('s7',6)" class="navig">7</div>
+			<div onclick="sshow('s8',7)" class="navig">8</div>
+			<div onclick="sshow('s9',8)" class="navig">9</div>
+			<div onclick="sshow('s10',9)" class="navig">10<divn>
 		</nav>
 	</div>
 
